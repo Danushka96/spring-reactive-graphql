@@ -1,1 +1,8 @@
+spring:
+  graphql:
+    graphiql:
+      enabled: true
 
+  data:
+    mongodb:
+      database: graphql_test

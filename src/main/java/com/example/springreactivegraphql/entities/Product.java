@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "products")
 @Data
 @AllArgsConstructor
-public class Products {
+public class Product {
     private final String id;
     private final String userId;
     private String name;

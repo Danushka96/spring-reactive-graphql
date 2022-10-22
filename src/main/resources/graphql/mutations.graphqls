@@ -1,0 +1,23 @@
+type Query {
+    getCustomers: [Customer]
+    getProducts: [Product]
+}
+
+type Mutation {
+    addCustomer(name: String, firstName: String, lastName: String, email: String): Customer
+    addProduct(name: String, price: Float, quantity: Int, userId: String): Product
+}
+
+type Customer {
+    id: String,
+    firstName: String
+    lastName: String
+    email: String
+}
+
+type Product {
+    name: String
+    price: Float
+    quantity: Int
+    customer: Customer
+}
